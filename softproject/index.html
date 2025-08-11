@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+    <body>
+        <canvas id="bg-animation"></canvas>
+      
+      
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Modern Portfolio — Your Name</title>
+  <meta name="description" content="A modern responsive portfolio landing page template." />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="Homepage">
+        <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <rect x="2" y="2" width="20" height="20" rx="4" fill="currentColor"/>
+        </svg>
+        <span class="brand">YourName</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="btn icon-btn" aria-pressed="false" aria-label="Toggle dark mode">🌓</button>
+        <button id="mobile-menu-toggle" class="btn icon-btn mobile-only" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="mobile-menu" hidden>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main" class="main">
+    <!-- Hero -->
+    <section class="hero container" aria-labelledby="hero-heading">
+      <div class="hero-content">
+        <h1 id="hero-heading">SAIRAM R<span class="accent">●</span></h1>
+        <p class="lead">I’m <strong></strong>, an electricals and electronics engineer .</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="#work">See my work</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="" loading="lazy">
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about container" aria-labelledby="about-heading">
+      <h2 id="about-heading">About me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I craft front-end experiences with a focus on performance, accessibility, and design systems. My stack: HTML, modern CSS (Flexbox & Grid), and vanilla JavaScript — with experience in React and tooling (Vite, Webpack).</p>
+          <ul class="meta-list">
+            <li><strong>Location:</strong> City, Country</li>
+            <li><strong>Available for:</strong> Freelance / Contract</li>
+            <li><strong>Expertise:</strong> UI/UX, Performance, Accessibility</li>
+          </ul>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <div class="stat-value">7+</div>
+            <div class="stat-label">Years experience</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">50+</div>
+            <div class="stat-label">Projects</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">100%</div>
+            <div class="stat-label">Accessible</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work / Portfolio -->
+    <section id="work" class="work container" aria-labelledby="work-heading">
+      <h2 id="work-heading">Selected work</h2>
+      <p class="muted">A snapshot of projects — click to view details.</p>
+
+      <div class="grid projects-grid" role="list">
+        <!-- Project card -->
+        <article class="card project" role="listitem">
+          <a href="#" class="project-link" aria-label="Open project Alpha details">
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=900&auto=format&fit=crop&s=placeholder" alt="Screenshot of project alpha" loading="lazy">
+            <div class="card-body">
+              <h3>Project Alpha</h3>
+              <p class="muted">Branding & website for a fintech startup.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="card project" role="listitem">
+          <a href="#" class="project-link">
+            <img src="https://images.unsplash.com/photo-1529088741189-1d1f0e01d9b4?q=80&w=900&auto=format&fit=crop&s=placeholder" alt="Screenshot of project beta" loading="lazy">
+            <div class="card-body">
+              <h3>Project Beta</h3>
+              <p class="muted">E-commerce UI & performance optimizations.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="card project" role="listitem">
+          <a href="#" class="project-link">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=900&auto=format&fit=crop&s=placeholder" alt="Screenshot of project gamma" loading="lazy">
+            <div class="card-body">
+              <h3>Project Gamma</h3>
+              <p class="muted">Design system and component library.</p>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services container" aria-labelledby="services-heading">
+      <h2 id="services-heading">Services</h2>
+      <div class="grid services-grid">
+        <div class="card service">
+          <h3>UI Design</h3>
+          <p>Design systems, hi-fi mockups, and component libraries.</p>
+        </div>
+        <div class="card service">
+          <h3>Front-end Development</h3>
+          <p>Accessible, performant sites using modern CSS and JS.</p>
+        </div>
+        <div class="card service">
+          <h3>Optimization</h3>
+          <p>Performance audits, lighthouse improvements, bundle trimming.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact container" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <p class="muted">Want to work together? Send a message — I reply within a few days.</p>
+
+      <div class="contact-grid">
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required minlength="2" placeholder="Your full name" />
+            <span class="field-error" id="error-name" aria-live="polite"></span>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@example.com" />
+            <span class="field-error" id="error-email" aria-live="polite"></span>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required minlength="10" placeholder="Tell me about your project"></textarea>
+            <span class="field-error" id="error-message" aria-live="polite"></span>
+          </div>
+
+          <div class="form-row form-actions">
+            <button type="submit" class="btn primary">Send message</button>
+            <button type="reset" class="btn ghost">Reset</button>
+          </div>
+
+          <div id="form-status" role="status" aria-live="polite" class="form-status"></div>
+        </form>
+
+        <aside class="contact-card" aria-label="Contact information">
+          <h3>Get in touch</h3>
+          <p>Email: <a href="mailto:hello@youremail.com">hello@youremail.com</a></p>
+          <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+          <p class="muted">Or reach me on social media:</p>
+          <ul class="social">
+            <li><a href="#" aria-label="GitHub">GitHub</a></li>
+            <li><a href="#" aria-label="Twitter">Twitter</a></li>
+            <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name — Built with care. <span class="muted">Made accessible and responsive.</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</body>
+</html>
